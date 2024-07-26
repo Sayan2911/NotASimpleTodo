@@ -1,0 +1,164 @@
+.custom-input {
+    background-color: #292929;
+    border: none;
+    color: white;
+    height: 5vh;
+    margin-bottom: 0;
+    padding: 0 10px; /* Optional: For some padding inside the input */
+}
+.custom-input:focus {
+    outline: none; /* Removes the default focus outline */
+}
+
+
+
+
+
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 6px 4px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 6px 20px;
+  }
+}
+
+
+/* dark mode light mode button css? */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #8d8989;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.checkbox-label .ball {
+  background-color: #ffffff4b;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  z-index: 9;
+}
+
+.checkbox:checked + .checkbox-label .ball{
+  transform: translateX(24px);
+  color: red;
+}
+
+
+
+.react-icons{
+  z-index: 99;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 15px;
+  background: linear-gradient(to top, violet, red);
+
+}
+
+html {
+  scrollbar-width: none;
+}
+/* .progressBarContainer {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.progressBar {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 10px;
+  
+  height: 100%;
+  opacity: 100%;
+} */
+ 
